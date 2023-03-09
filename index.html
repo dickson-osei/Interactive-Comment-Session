@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css" >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Plus+Jakarta+Sans:wght@200;400;600&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive comments section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+
+  <!-- Pull dynamic content from the data.json file -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Dickson Osei</a>.
+  </div>
+  <!-- ................................... -->
+  <div class="Main-div">
+    <div class="flex-container1">
+      <div id="for_Mobile">
+      <div id="score">
+        <div id="plus">  </div>
+        <div id="count"> 12 </div>
+        <div id="minus">  </div>
+      </div>
+      <div id="response_Mobile">
+        <div id="replies_Mobile"> </div>
+          <div id="Reply-text_Mobile">Reply</div>
+       </div>
+
+      </div>
+      <div class="avatar">
+      <div id="user">
+        <img id="profile"src="./images/avatars/image-amyrobson.webp"> 
+        <div id="details">
+        <p id="username"><strong>amyrobson</strong></p>
+      </div>
+        <div id="duration"> 
+        <p> 1 month ago</p>
+      </div>
+      
+      </div>
+      <div id="content"> 
+        <p id="text-wrap">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+      </div>
+    </div>
+        
+     <div id="response">
+       <div id="replies"> </div>
+          <div id="Reply-text">Reply</div>
+      </div>
+
+      
+
+    </div>
+  <!-- Begining of the Second comment -->
+  <div class="flex-container2">
+    <div id="for_Mobile">
+    <div id="score">
+      <div id="plus">  </div>
+        <div id="count"> 5 </div>
+        <div id="minus">  </div>
+    </div>
+    <div id="response_Mobile">
+      <div id="replies_Mobile"> </div>
+        <div id="Reply-text_Mobile">Reply</div>
+     </div>
+    </div>
+    <div class="avatar">
+     <div id="user">
+      <img id="profile" src="./images/avatars/image-maxblagun.webp">
+      <div id="details">
+        <p id="username"><strong>maxblagun</strong></p>
+      </div>
+      <div id="duration" >
+        <p>2 weeks ago</p>
+      </div>
+     </div>
+     <div id="content">
+      <p id="text-wrap">Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!</p>
+     </div>
+    </div>
+    <div id="response">
+      <div id="replies"> </div>
+          <div id="Reply-text">Reply</div>
+    </div>
+  </div>
+
+  <!-- Begining of Flex container3 -->
+  <div class="flex-container3-section">
+   <div id="vertical-line"><div id="line"></div></div>
+
+   <div id="flex-container3">
+
+   <div id="flex-container3a">
+    <div id="for_Mobile3">
+    <div id="score">
+      <div id="plus">  </div>
+        <div id="count"> 4 </div>
+        <div id="minus">  </div>
+    </div>
+    <div id="response_Mobile">
+      <div id="replies_Mobile"> </div>
+        <div id="Reply-text_Mobile">Reply</div>
+     </div>
+    </div>
+    <div class="avatar">
+      <div id="user">
+       <img id="profile" src="./images/avatars/image-ramsesmiron.webp">
+       <div id="details">
+         <p id="username"><strong>ramsesmiron</strong></p>
+       </div>
+       <div id="duration" >
+         <p>1 weeks ago</p>
+       </div>
+      </div>
+      <div id="content">
+       <p id="text-wrap3">@maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</p>
+      </div>
+     </div>
+     <div id="response3">
+      <div id="replies"> </div>
+          <div id="Reply-text">Reply</div>
+    </div>
+
+   </div>
+   <div id="flex-container3b">
+    <div id="for_Mobile3">
+    <div id="score">
+      <div id="plus">  </div>
+        <div id="count"> 2 </div>
+        <div id="minus">  </div>
+    </div>
+    <div id="response4_Mobile">
+      <div id="delete"> </div>
+          <div id="delete-text">Delete</div>
+          <div id="edit"> </div>
+          <div id="edit-text">edit</div>
+    </div>
+  </div>
+    <div class="avatar">
+      <div id="user">
+       <img  id="profile" src="./images/avatars/image-juliusomo.webp">
+       <div id="details">
+         <p id="username"><strong>juliusomo</strong></p>
+         <p id="you">you</p>
+       </div>
+       <div id="duration" >
+         <p>2 days ago</p>
+       </div>
+      </div>
+      <div id="content">
+       <p id="text-wrap4"> @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</p>
+      </div>
+     </div>
+     <div id="response4">
+      <div id="delete"> </div>
+          <div id="delete-text">Delete</div>
+          <div id="edit"> </div>
+          <div id="edit-text">edit</div>
+    </div>
+
+
+   </div>
+
+  </div>
+
+  </div>
+  <!--Beginning of flex constianer 4-->
+  <div class="flex-container4">
+    <div id="response5_Mobile">
+    <div id="user"> 
+      <img id="user1" src="./images/avatars/image-juliusomo.webp">
+    </div>
+    <div id="button_Mobile">
+      <button id="button_ForMobile" type="submit">SEND</button> 
+    </div>
+    </div>
+    <div id="input-section">
+      <input id="input" placeholder="Add comments here">
+      <!-- <textarea id="input" name="post" rows="" cols="">Add Comments here</textarea> -->
+    </div>
+    <div>
+      <button id="button"type="submit">SEND</button> 
+    </div>
+
+    
+
+
+  
+  </div>
+    
+  </div>
+
+</body>
+</html>

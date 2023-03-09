@@ -1,0 +1,607 @@
+*{ 
+    box-sizing: border-box;
+}
+
+.Main-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(228, 33%, 97%);
+    font-family: 'Crimson Text', serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    
+}
+
+.p{
+    font-size: 16px;
+}
+
+.flex-container1{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid; */
+    border-radius: 0.8rem;
+    background-color: hsl(0, 0%, 100%);
+    
+}
+
+.flex-container2{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid; */
+    border-radius: 0.8rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+.flex-container3-section{
+    display: flex;
+    flex-direction: row;
+    /* border: 2px solid; */
+    justify-content: center;
+    /* align-items: flex-end; */
+}
+
+#flex-container3a{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid; */
+    border-radius: 0.8rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+#flex-container3b{
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid; */
+    border-radius: 0.8rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+#flex-container3{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid; */
+
+}
+
+.flex-container4{
+    display: flex;
+    border-radius: 0.8rem;
+    background-color: hsl(0, 0%, 100%);
+}
+
+#vertical-line{
+    /* border: 2px solid; */
+    /* color: red; */
+    display: flex;
+    justify-content:center;
+}
+
+#line{
+    border: 1px solid;
+    color: hsl(223, 19%, 93%)
+}
+
+
+
+#score{
+    /* border: 2px solid; */
+    border-radius: 0.5rem;
+    background-color: hsl(228, 33%, 97%);;
+}
+
+.avatar{
+    display: flex;
+    flex-direction: column;
+}
+
+#user{
+    /* border: 2px solid; */
+    display:inline-flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    align-items: center;
+    column-gap: 1.5vw;  
+    
+}
+
+#you{
+    color: white;
+    background-color: hsl(238, 40%, 52%);
+    text-align: center;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+}
+
+
+#Reply-text{
+    color:hsl(238, 40%, 52%)
+}
+
+#delete-text{
+    color:  hsl(358, 79%, 66%)
+}
+
+#edit-text{
+    color:hsl(238, 40%, 52%)
+}
+#duration{
+    color:hsl(211, 10%, 45%)
+}
+
+#content{
+    color: hsl(211, 10%, 45%);
+}
+
+#button{
+    color: white;
+    background-color:hsl(238, 40%, 52%) ;
+    border: hsl(238, 40%, 52%);
+    border-radius: 0.2rem;
+}
+
+#button_ForMobile{
+    color: white;
+    background-color:hsl(238, 40%, 52%) ;
+    border: hsl(238, 40%, 52%);
+    border-radius: 0.2rem;
+}
+
+#input{
+    border-color:hsl(223, 19%, 93%);
+    border-radius: 0.5rem;
+    
+}
+
+#plus{
+    background-image: url("./images/icon-plus.svg");
+    background-size: cover;
+    background-position: center;
+    /* border: 2px solid; */
+    height: 1rem;
+    width: 1rem;
+}
+#minus{
+    background-image: url("./images/icon-minus.svg");
+    background-size: cover;
+    background-position: center;
+    /* border: 2px solid; */
+    height: 0.5rem;
+    width: 1rem;
+}
+#replies{
+    background-image: url("./images/icon-reply.svg");
+    background-size: cover;
+    background-position: center;
+    /* border: 2px solid; */
+    height: 1rem;
+    width: 1.0rem;
+}
+
+#delete{
+    background-image: url("./images/icon-delete.svg");
+    background-size: cover;
+    background-position: center;
+    height: 1rem;
+    width: 1.0rem;
+}
+
+#edit{
+    background-image: url("./images/icon-edit.svg");
+    background-position: center;
+    background-size: cover;
+    height: 1rem;
+    width: 1.0rem;
+}
+
+#count{
+    color:hsl(238, 40%, 52%) ;
+}
+
+
+/* ........................................................................................... */
+/* For Mobile size */
+@media only screen and (min-width:320px) and (max-width:480px){
+
+.Main-div{
+    margin-top: 4vh;
+    row-gap: 0.5vh;
+}   
+
+#text-wrap{
+    max-width: 75vw;
+}
+
+#text-wrap3{
+  max-width: 65vw;
+}
+
+#text-wrap4{
+    max-width: 68vw;
+}
+#profile{
+    height: 5vh;
+    width: auto;
+
+}
+
+#user1{
+    height: 5vh;
+    width: auto;
+}
+
+.flex-container3-section{
+    width: 85vw;
+    align-items: center;
+    /* border: 2px solid; */
+}
+
+.flex-container1{
+    flex-direction: column-reverse;
+    width: 85vw;
+    margin-top: 5vh;
+    align-items: center;
+    /* border: 2px solid; */
+}
+
+#response{
+    display: none;
+}
+
+#response3{
+    display: none;
+}
+
+#response4{
+    display: none;
+}
+#button{
+    display: none;
+}
+
+#response4_Mobile{
+    display: inline-flex;
+    column-gap: 2vw;
+
+}
+#score{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid; */
+    column-gap: 2.5vw;
+    width: 18vw;
+    height: 5vh;
+}
+
+.flex-container2{
+    flex-direction: column-reverse;
+    width: 85vw;
+    margin-top: 5vh;
+    align-items: center;
+}
+
+#vertical-line{
+    /* border: 2px solid; */
+    width: 6vw;
+    align-self: stretch;
+    justify-content: flex-start;
+    
+}
+
+
+
+#flex-container3a{
+    flex-direction: column-reverse;
+    width: 79vw;
+    margin-top: 5vh;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+#flex-container3b{
+    flex-direction: column-reverse;
+    width: 79vw;
+    margin-top: 5vh;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+
+
+
+
+#flex-container3{
+    align-items: center;
+}
+
+.flex-container4{
+    flex-direction: column-reverse;
+    width: 79vw;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    margin-bottom: 1.5vw;
+    /* align-content: center; */
+    /* margin-left: 3vw;
+    padding: 2vw; */
+    align-items: center;
+    /* border: 2px solid; */
+}
+
+#replies_Mobile{
+    background-image: url("./images/icon-reply.svg");
+    background-size: cover;
+    background-position: center;
+    /* border: 2px solid; */
+    height: 1rem;
+    width: 1.0rem;
+}
+
+
+#response_Mobile{
+    display: inline-flex;
+    column-gap: 1.5vw;
+}
+
+
+#Reply-text_Mobile{
+    color:hsl(238, 40%, 52%)
+}
+
+#for_Mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+    align-items: center;
+    /* border: 2px solid; */
+    width: 75vw;
+}
+
+#for_Mobile3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1vh;
+    align-items: center;
+    /* border: 2px solid; */
+    width: 68vw;
+}
+
+#response5_Mobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    /* border: 2px solid; */
+    
+}
+
+#plus{
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
+#minus{
+    height: 0.2rem;
+    width: 0.8rem;
+}
+
+#you{
+    color: white;
+    background-color: hsl(238, 40%, 52%);
+    text-align: center;
+    border-radius: 0.1rem;
+    padding: 0.1rem;
+    /* width: 4vw; */
+}
+
+#details{
+    display: inline-flex;
+    column-gap: 1.5vw;
+}
+#input-section{
+    margin-top: 2vh;
+}
+
+#input{
+    width: 70vw;
+    height: 10vh;
+}
+
+
+
+#button_ForMobile{
+    width: 20vw;
+    height: 5vh;
+
+    /* border: 2px solid; */
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ....................................................................................................................... */
+/* For DEsktop */
+@media only screen and (min-width: 1024px){
+   
+ #text-wrap{
+        max-width: 35vw;
+    }
+
+    #text-wrap3{
+        max-width: 32vw;
+    }
+
+    #text-wrap4{
+        max-width: 32vw;
+    }
+
+    .flex-container1{
+     flex-direction: row;
+     width: 45vw;
+     margin-top: 5vh;
+     
+    }
+
+    .flex-container2{
+     flex-direction: row;
+     width: 45vw;
+    }
+
+    .flex-container3-section{
+        width: 45vw;
+    }
+
+
+    #vertical-line{
+        width: 6vw;
+    }
+
+    .Main-div{
+        margin-top: 7vh;
+        row-gap: 2vh;
+    }
+    #flex-container3{
+        row-gap: 2vh;
+        width: 39vw;
+    }
+
+    .flex-container4{
+        justify-content: space-around;
+        align-items: flex-start;
+        justify-content: center;
+        width: 45vw;
+        height: 100%;
+        column-gap: 2.1vw;
+        /* margin-top: 2vh; */
+    }
+
+    #input{
+      width: 30vw;
+      height: 10vh;
+      /* display: flex;
+      align-content: flex-start;
+      align-items: flex-start; */
+      
+    }
+    
+
+    #input-section{
+        margin-top: 2vh;
+    }
+    #user1{
+        margin-top: 2vh;
+    }
+
+    #button{
+        width: 5vw;
+        height: 5vh;
+        margin-top: 2vh;
+    }
+    
+    #user img{
+        max-width: 2rem;
+        height: 2rem;
+    }
+
+    #details{
+       display: inline-flex;
+       flex-direction: row;
+       justify-content: space-between;
+       column-gap: 10px;
+    }
+
+    #score{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2.5vh;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.3vh;
+        margin-right: 15px;
+        width: 2.5vw;
+        height: 13vh;
+
+
+    }
+    #response{
+        display: inline-flex;
+        justify-content: space-between;
+        column-gap: 0.5vw ;
+        margin-left: -2vw;
+        margin-top: 3vh;
+      }
+      #response3{
+        display: inline-flex;
+        justify-content: space-between;
+        column-gap: 0.5vw ;
+        margin-left: -5vw;
+        margin-top: 3vh;
+        /* border: 2px solid; */
+      }
+
+      #response4{
+        display: inline-flex;
+        justify-content: space-between;
+        column-gap: 0.8vw ;
+        margin-left: -10vw;
+        margin-top: 3vh;
+      }
+
+      #response_Mobile{
+        display: none;
+      }
+
+      #response4_Mobile{
+        display: none;
+      }
+
+      #button_Mobile{
+        display: none;
+      }
+
+
+
+
+  
+} 
+
+
